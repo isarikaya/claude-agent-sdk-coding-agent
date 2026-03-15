@@ -1,6 +1,7 @@
 import 'dotenv/config'
 
 import { query, tool, createSdkMcpServer } from "@anthropic-ai/claude-agent-sdk"
+import { ORCHESTRATOR_SYSTEM_PROMPT } from "./ai/prompts"
 import { Sandbox } from "@e2b/code-interpreter"
 import { readFileSync } from "fs"
 import { basename } from "path"
@@ -77,6 +78,7 @@ for await (const message of query({
   prompt: "https://refactoring.guru/design-patterns/factory-method look up the factory method example in the documentation and create a minimal example in the factory.ts file. To verify that the code is working in the factory.ts file, type console.log and tell me the output.",
   options: {
     model: "claude-haiku-4-5",
+    systemPrompt: ORCHESTRATOR_SYSTEM_PROMPT,
     permissionMode: "acceptEdits",
     allowedTools: ["Read", "Glob", "Grep", "Agent", "mcp__sandbox-tools__run_in_sandbox"],
     mcpServers: { "sandbox-tools": mcpServer },
