@@ -1,6 +1,12 @@
 {
   "type": "module",
   "dependencies": {
-    "@anthropic-ai/claude-agent-sdk": "^0.2.76"
+    "@anthropic-ai/claude-agent-sdk": "^0.2.76",
+    "@e2b/code-interpreter": "^2.3.3",
+    "dotenv": "^17.3.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0"
   }
 }
