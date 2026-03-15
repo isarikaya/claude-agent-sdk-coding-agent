@@ -5,6 +5,7 @@ for await (const message of query({
   prompt:
     "Review utils.py for bugs that would cause crashes. Fix any issues you find.",
   options: {
+    model: "claude-haiku-4-5-20251001",
     allowedTools: ["Read", "Edit", "Glob"], // Tools Claude can use
     permissionMode: "acceptEdits", // Auto-approve file edits
   },
