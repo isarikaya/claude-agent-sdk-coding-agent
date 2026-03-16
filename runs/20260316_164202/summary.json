@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "runId": "20260316_164202",
+    "startedAt": "2026-03-16T13:42:02.623Z",
+    "config": "2023_level1",
+    "split": "validation",
+    "model": "claude-sonnet-4-5",
+    "cacheDir": "C:\\Users\\PC\\Desktop\\coding-agent\\gaia\\data",
+    "textOnlyMode": false,
+    "gitSha": null,
+    "packageVersions": {
+      "@anthropic-ai/claude-agent-sdk": "^0.2.76",
+      "@e2b/code-interpreter": "^2.3.3",
+      "dotenv": "^17.3.1",
+      "zod": "^4.3.6"
+    }
+  },
+  "metrics": {
+    "total": 53,
+    "attempted": 49,
+    "skipped": 4,
+    "correct": 15,
+    "incorrect": 34,
+    "no_answer": 26,
+    "accuracy": 0.2830188679245283,
+    "accuracy_attempted": 0.30612244897959184,
+    "skip_reasons": {
+      "skipped_unsupported_modality:.png": 2,
+      "skipped_unsupported_modality:.mp3": 2
+    },
+    "error_types": {
+      "wrong_answer": 8,
+      "no_final_answer": 26
+    }
+  },
+  "completedAt": "2026-03-16T15:41:09.486Z"
+}
